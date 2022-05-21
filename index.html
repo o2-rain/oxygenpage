@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>氧页</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<script type="text/javascript">
+    function Search(num)
+    {
+        var i;
+        for(i=1;i<=5;i++)
+        {
+            if(i==num){
+                document.getElementById("s"+i).className="chosed";
+                document.getElementById("i"+i).style.display="block";
+            }
+            else{
+                document.getElementById("s"+i).className="";
+                document.getElementById("i"+i).style.display="none";
+            }
+        }
+    }
+
+    function Tab(num)
+    {
+        var i;
+        for(i=1;i<=5;i++)
+        {
+            if(i==num){
+                document.getElementById("L"+i).className="current";
+                document.getElementById("d"+i).style.display="block";
+            }
+            else{
+                document.getElementById("L"+i).className="";
+                document.getElementById("d"+i).style.display="none";
+            }
+        }
+    }
+</script>
+
+<body> 
+
+<div class="head">
+
+    <div>
+        <ul>
+            <li id="s1" onclick="Search(1)" class="chosed"><a href="#">必应</a></li>
+            <li id="s2" onclick="Search(2)"><a href="#">百度</a></li>
+            <li id="s3" onclick="Search(3)" ><a href="#">谷歌</a></li>
+            <li id="s4" onclick="Search(4)"><a href="#">学术</a></li>
+            <li id="s5" onclick="Search(5)"><a href="#">网盘</a></li>
+        </ul>
+    </div>
+
+    <!--必应-->
+    <div id="i1">
+        <form action="https://cn.bing.com/search" target="_blank">
+            <input type="text" name="q" placeholder="必应搜索...">
+        </form>
+    </div>
+    <!--百度搜索-->
+    <div id="i2">
+        <form action="http://www.baidu.com/s" target="_blank">
+            <input type="text" name="wd" id="kw" placeholder="百度搜索...">
+        </form>
+    </div>
+    <!--谷歌搜索-->
+    <div id="i3">
+        <form action="https://xn--flw351e.ml/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Google搜索...">
+        </form>
+    </div>
+    <!--谷歌学术搜索-->
+    <div id="i4">
+        <form action="https://sc.panda321.com/scholar" target="_blank">
+            <input type="text" name="q" placeholder="谷歌学术搜索...">
+        </form>
+    </div>
+    <!--网盘搜索-->
+    <div id="i5">
+        <form action="http://www.xuesousou.com/search" target="_blank">
+            <input type="text" name="q" placeholder="网盘搜索...">
+        </form>
+    </div>
+</div>
+
+<div class="content">
+<!--导航-->
+    <div class="tab">
+        <ul>
+            <li id="L1" onclick="Tab(1)" class="current"><a href="#">常用</a></li>
+            <li id="L2" onclick="Tab(2)"><a href="#">影音</a></li>
+            <li id="L3" onclick="Tab(3)"><a href="#">学术</a></li>
+            <li id="L4" onclick="Tab(4)"><a href="#">工具</a></li>
+            <li id="L5" onclick="Tab(5)"><a href="#">其他</a></li>
+        </ul>
+    </div>
+
+<!--常用-->
+    <div id="d1">
+        <div class="contain">
+            <!--微博-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://weibo.com/" target="_blank">
+                        <img src="icon/weibo.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://weibo.com/" class="text" target="_blank">微博</a></div>
+            </div>
+            <!--知乎-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.zhihu.com/" target="_blank">
+                        <img src="icon/zhihu.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.zhihu.com/" class="text" target="_blank">知乎</a></div>
+            </div>
+            <!--百度贴吧-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://tieba.baidu.com/" target="_blank">
+                        <img src="icon/tieba.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://tieba.baidu.com/" class="text" target="_blank">百度贴吧</a></div>
+            </div>
+            <!--豆瓣-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.douban.com/" target="_blank">
+                        <img src="icon/douban.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.douban.com/" class="text" target="_blank">豆瓣</a></div>
+            </div>
+            <!--A岛-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://adnmb3.com/Forum" target="_blank">
+                        <img src="icon/adao.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://adnmb3.com/Forum" class="text" target="_blank">A岛</a></div>
+            </div>
+            <!--后续-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://houxu.app/" target="_blank">
+                        <img src="icon/houxu.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://houxu.app/" class="text" target="_blank">后续</a></div>
+            </div>
+            <!--品玩-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.pingwest.com/" target="_blank">
+                        <img src="icon/pingwest.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.pingwest.com/" class="text" target="_blank">品玩</a></div>
+            </div>
+            <!--CSDN-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.csdn.net/" target="_blank">
+                        <img src="icon/csdn.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.csdn.net/" class="text" target="_blank">CSDN</a></div>
+            </div>
+            <!--掘金-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://juejin.cn/" target="_blank">
+                        <img src="icon/juejin.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://juejin.cn/" class="text" target="_blank">掘金</a></div>
+            </div>
+            <!--Gitee-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://gitee.com/" target="_blank">
+                        <img src="icon/gitee.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://gitee.com/" class="text" target="_blank">Gitee</a></div>
+            </div>  
+            <!--QQ邮箱-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://mail.qq.com/" target="_blank">
+                        <img src="icon/qqmail.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://mail.qq.com/" class="text" target="_blank">QQ邮箱</a></div>
+            </div>
+            <!--网易邮箱-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://mail.163.com/" target="_blank">
+                        <img src="icon/163mail.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://mail.163.com/" class="text" target="_blank">网易邮箱</a></div>
+            </div>
+        </div>
+    </div>
+    <!--影音-->
+    <div id="d2">
+        <div class="contain">
+            <!--爱奇艺-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://www.iqiyi.com/" target="_blank">
+                        <img src="icon/iqiyi.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://www.iqiyi.com/" class="text" target="_blank">爱奇艺</a></div>
+            </div>
+            <!--优酷-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.youku.com/" target="_blank">
+                        <img src="icon/youku.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.youku.com/" class="text" target="_blank">优酷</a></div>
+            </div>
+            <!--腾讯视频-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://v.qq.com/" target="_blank">
+                        <img src="icon/qqvideo.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://v.qq.com/" class="text" target="_blank">腾讯视频</a></div>
+            </div>
+            <!--AcFun-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.acfun.cn/" target="_blank">
+                        <img src="icon/acfun.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.acfun.cn/" class="text" target="_blank">AcFun</a></div>
+            </div>
+            <!--哔哩哔哩-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.bilibili.com/" target="_blank">
+                        <img src="icon/bilibili.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.bilibili.com/" class="text" target="_blank">哔哩哔哩</a></div>
+            </div>
+            <!--西瓜视频-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.ixigua.com/" target="_blank">
+                        <img src="icon/xgvideo.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.ixigua.com/" class="text" target="_blank">西瓜视频</a></div>
+            </div>
+            <!--YouTube-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="icon/youtube.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.youtube.com/" class="text" target="_blank">YouTube</a></div>
+            </div>
+            <!--茶杯狐-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://cupfox.app/" target="_blank">
+                        <img src="icon/cupfox.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://cupfox.app/" class="text" target="_blank">茶杯狐</a></div>
+            </div>
+            <!--樱花动漫(P)-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.yhdmp.cc/" target="_blank">
+                        <img src="icon/yhdmp.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.yhdmp.cc/" class="text" target="_blank">樱花动漫(P)</a></div>
+            </div>
+            <!--哈哩哈哩-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://halihali2.com/" target="_blank">
+                        <img src="icon/halihali.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://halihali2.com/" class="text" target="_blank">哈哩哈哩</a></div>
+            </div>
+            <!--氧直播-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://wfgui.gitee.io/oxygenlive/" target="_blank">
+                        <img src="icon/lightlive.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://wfgui.gitee.io/oxygenlive/" class="text" target="_blank">氧直播</a></div>
+            </div>
+             <!--喜马拉雅-->
+             <div class="mix">
+                <div class="icon">
+                    <a href="https://www.ximalaya.com/" target="_blank">
+                        <img src="icon/xmly.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.ximalaya.com/" class="text" target="_blank">喜马拉雅FM</a></div>
+            </div>
+             <!--音乐下载-->
+             <div class="mix">
+                <div class="icon">
+                    <a href="https://flac.life/" target="_blank">
+                        <img src="icon/musicdownload.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://flac.life/" class="text" target="_blank">音乐下载</a></div>
+            </div>
+        </div>
+    </div>
+<!--学术-->
+    <div id="d3">
+        <div class="contain">
+            <!--知网-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://www.cnki.net/" target="_blank">
+                        <img src="icon/zhiwang.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://www.cnki.net/" class="text" target="_blank">知网</a></div>
+            </div>
+            <!--读秀-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://www.duxiu.com/" target="_blank">
+                        <img src="icon/duxiu.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://www.duxiu.com/" class="text" target="_blank">读秀</a></div>
+            </div>
+             <!--IEEE-->
+             <div class="mix">
+                <div class="icon">
+                    <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">
+                        <img src="icon/ieee.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://ieeexplore.ieee.org/Xplore/home.jsp" class="text" target="_blank">IEEE</a></div>
+            </div>
+            <!--Sci-Hub-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.sci-hub.ren/" target="_blank">
+                        <img src="icon/scihub.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.sci-hub.ren/" class="text" target="_blank">Sci-Hub</a></div>
+            </div>
+            <!--百度学术-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://xueshu.baidu.com/" target="_blank">
+                        <img src="icon/baidu.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://xueshu.baidu.com/" class="text" target="_blank">百度学术</a></div>
+            </div>
+            <!--谷歌学术镜像-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://ac.scmor.com/" target="_blank">
+                        <img src="icon/google.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://ac.scmor.com/" class="text" target="_blank">谷歌学术镜像</a></div>
+            </div>
+            <!--科塔学术导航-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://site.sciping.com/" target="_blank">
+                        <img src="icon/keta.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://site.sciping.com/" class="text" target="_blank">科塔导航</a></div>
+            </div>
+            <!--谷歌翻译-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://translate.google.cn/" target="_blank">
+                        <img src="icon/googletranslation.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://translate.google.cn/" class="text" target="_blank">谷歌翻译</a></div>
+            </div>
+            <!--菜鸟教程-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.runoob.com/" target="_blank">
+                        <img src="icon/cainiao.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.runoob.com/" class="text" target="_blank">菜鸟教程</a></div>
+            </div>
+            <!--我要自学网-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.51zxw.net/" target="_blank">
+                        <img src="icon/wyzx.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.51zxw.net/" class="text" target="_blank">我要自学网</a></div>
+            </div>
+        </div>
+    </div>
+<!--工具-->
+    <div id="d4">
+        <div class="contain">
+            <!--文字识别-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://web.baimiaoapp.com/" target="_blank">
+                        <img src="icon/baimiao.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://web.baimiaoapp.com/" class="text" target="_blank">文字识别</a></div>
+            </div>
+            <!--PDF转换-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.ilovepdf.com/zh-cn" target="_blank">
+                        <img src="icon/pdf.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.ilovepdf.com/zh-cn" class="text" target="_blank">PDF转换</a></div>
+            </div>
+            <!--ico转换-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://convertico.com/" target="_blank">
+                        <img src="icon/ico.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://convertico.com/" class="text" target="_blank">PNG转ICO</a></div>
+            </div>
+            <!--照片EXIF查询-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.gaitubao.com/exif" target="_blank">
+                        <img src="icon/exif.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.gaitubao.com/exif" class="text" target="_blank">照片EXIF查询</a></div>
+            </div>
+            <!--MD色卡-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.materialpalette.com/colors" target="_blank">
+                        <img src="icon/MDcolor.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.materialpalette.com/colors" class="text" target="_blank">MD色卡</a></div>
+            </div>
+            <!--iconfont-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.iconfont.cn/" target="_blank">
+                        <img src="icon/iconfont.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.iconfont.cn/" class="text" target="_blank">iconfont</a></div>
+            </div>
+            <!--在线PS-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://ps.gaoding.com/#/" target="_blank">
+                        <img src="icon/ps.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://ps.gaoding.com/#/" class="text" target="_blank">在线PS</a></div>
+            </div>
+            <!--音视频剪辑-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://123apps.com/cn/" target="_blank">
+                        <img src="icon/123apps.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://123apps.com/cn/" class="text" target="_blank">在线音视频剪辑</a></div>
+            </div>
+            <!--Chrome应用店-->
+            <div class="mix">
+                <!--Chrome应用店-->
+                <div class="icon">
+                    <a href="https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon" target="_blank">
+                        <img src="icon/google.png" width="72">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon" class="text" target="_blank">
+                        Chrome应用店
+                    </a>
+                </div>
+            </div>
+            <!--极简插件-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://chrome.zzzmh.cn/" target="_blank">
+                        <img src="icon/plugin.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://chrome.zzzmh.cn/" class="text" target="_blank">极简插件</a></div>
+            </div>
+            <!--油猴脚本-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://greasyfork.org/zh-CN" target="_blank">
+                        <img src="icon/youhou.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://greasyfork.org/zh-CN" class="text" target="_blank">油猴脚本</a></div>
+            </div>
+            <!--PCB印制线宽度计算器-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.digikey.cn/zh/resources/conversion-calculators/conversion-calculator-pcb-trace-width" target="_blank">
+                        <img src="icon/pcb.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.digikey.cn/zh/resources/conversion-calculators/conversion-calculator-pcb-trace-width" class="text" target="_blank">PCB印制线宽度计算器</a></div>
+            </div>
+            <!--立创EDA-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://lceda.cn/editor" target="_blank">
+                        <img src="icon/lceda.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://lceda.cn/editor" class="text" target="_blank">立创EDA</a></div>
+            </div>
+        </div>
+    </div>
+    <!--其他-->
+    <div id="d5">
+        <div class="contain">
+            <!--Gmail-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://mail.google.com/" target="_blank">
+                        <img src="icon/gmail.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://mail.google.com/" class="text" target="_blank">Gmail</a></div>
+            </div>
+            <!--临时邮箱-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.moakt.com/" target="_blank">
+                        <img src="icon/lsmail.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.moakt.com/" class="text" target="_blank">临时邮箱</a></div>
+            </div>
+             <!--吾爱破解-->
+             <div class="mix">
+                <div class="icon">
+                    <a href="https://www.52pojie.cn/" target="_blank">
+                        <img src="icon/52pj.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.52pojie.cn/" class="text" target="_blank">吾爱破解</a></div>
+            </div>
+            <!--果核剥壳-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.ghpym.com/" target="_blank">
+                        <img src="icon/ghbk.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.ghpym.com/" class="text" target="_blank">果核剥壳</a></div>
+            </div>
+            <!--大眼仔旭-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://www.dayanzai.me/" target="_blank">
+                        <img src="icon/dayanzai.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://www.dayanzai.me/" class="text" target="_blank">大眼仔旭</a></div>
+            </div>
+            <!--异星软件空间-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://www.yxssp.com/" target="_blank">
+                        <img src="icon/yx.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://www.yxssp.com/" class="text" target="_blank">异星软件空间</a></div>
+            </div>
+            <!--殁漂遥-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.mpyit.com/" target="_blank">
+                        <img src="icon/laomo.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.mpyit.com/" class="text" target="_blank">殁漂遥</a></div>
+            </div>
+            <!--晨钟网络科技-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://jamcz.com/" target="_blank">
+                        <img src="icon/jamcz.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://jamcz.com/" class="text" target="_blank">晨钟网络科技</a></div>
+            </div>
+            <!--经典游戏-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.yikm.net/" target="_blank">
+                        <img src="icon/game.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.yikm.net/" class="text" target="_blank">经典游戏</a></div>
+            </div>
+            <!--口袋E家-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="http://bkm.esplus.club/" target="_blank">
+                        <img src="icon/kdej.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="http://bkm.esplus.club/" class="text" target="_blank">口袋E家</a></div>
+            </div>
+            <!--得捷-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.digikey.cn/" target="_blank">
+                        <img src="icon/digi.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.digikey.cn/" class="text" target="_blank">得捷</a></div>
+            </div>
+            <!--立创商城-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://www.szlcsc.com/?ref=editor" target="_blank">
+                        <img src="icon/lcsc.png" width="72">
+                    </a>
+                </div>
+                <div class="name"><a href="https://www.szlcsc.com/?ref=editor" class="text" target="_blank">立创商城</a></div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="bottom"></div>
+
+</body>
+</html>
