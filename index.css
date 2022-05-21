@@ -1,0 +1,160 @@
+.head{
+    width: 1300px;
+    height: 105px;
+    margin: auto;
+
+}
+
+ul{
+    width: 540px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    margin-top: 40px;
+}
+ul li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    list-style: none;
+}
+ul li:hover{
+     color: black;
+     font-weight: bold;
+ }
+ul li a{
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 18px;
+}
+.chosed{
+    color: black;
+    font-weight: bold;
+}
+
+input{
+    width: 650px;
+    height: 52px;
+    border-radius: 30px;
+    text-indent: 20px;
+    font-size: 16px;
+    box-shadow: 1px 1px 2px grey;
+    outline: none;
+}
+
+#i1{
+    text-align: center;
+    margin-top: 10px;
+}
+#i2{
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+#i3{
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+#i4{
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+#i5{
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content{
+    width: 1300px;
+    height: 490px;
+    background: #eeeeee;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 5px;
+    box-shadow: 1px 2px 4px #bdbdbd;
+}
+
+.tab ul{
+    width: 550px;
+    height: 30px;
+}
+.tab ul li{
+    width: 100px;
+    height: px;
+    text-align: center;
+    list-style: none;
+}
+.tab ul li:hover{
+     color: black;
+     font-weight: bold;
+ }
+.tab ul li a{
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 17px;
+}
+.current{
+    color: black;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+#d1{
+    margin-top: 20px;
+}
+#d2{
+    display: none;
+    margin-top: 20px;
+}
+#d3{
+    display: none;
+    margin-top: 20px;
+}
+#d4{
+    display: none;
+    margin-top: 20px;
+}
+#d5{
+    display: none;
+    margin-top: 20px;
+}
+
+.contain{
+    width: 1120px;
+    margin: auto;
+    margin-top: 30px;
+}
+.mix{
+    float: left;
+}
+.icon{
+    width: 160px;
+    text-align: center;
+    margin-top: 50px;
+    transform: scale(1);
+    transition: transform 0.4s ease 0s;
+}
+.icon:hover {
+    transform: scale(1.06);
+  } 
+.name{
+    width: 160px;
+    text-align: center;
+}
+.text{
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 14px;
+}
+.text:hover{
+    color: black;
+    font-weight: bold;
+}
+.bottom{
+    height: 30px;
+}
