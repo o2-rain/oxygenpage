@@ -1,6 +1,6 @@
 .head{
     width: 1300px;
-    height: 105px;
+    height: 100px;
     margin: auto;
 
 }
@@ -156,5 +156,5 @@ input{
     font-weight: bold;
 }
 .bottom{
-    height: 30px;
+    height: 15px;
 }
