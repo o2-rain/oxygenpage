@@ -1,3 +1,5 @@
+# 1.11.240221
+- 搜索引擎“Ecosia”替换为“Kagi”
 # 1.10.240111
 - 新增“X”、“Stage1”、“iconfont”
 - “RSS”替换为Qireader
