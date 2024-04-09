@@ -1,6 +1,6 @@
 # 1.14.240409
-- 新增“clicli”、“girigirilove”
-- 删除“E-ACG”、"樱花动漫"
+- 新增“girigirilove”
+- 删除“E-ACG”
 # 1.13.240402
 - 搜索引擎“Swisscows”替换为“SearXNG”
 # 1.12.240229
