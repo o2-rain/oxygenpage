@@ -50,30 +50,36 @@
 
     <div>
         <ul>
-            <li id="s1" onclick="Search(1)" class="chosed"><a href="#">XNG</a></li>
-            <li id="s2" onclick="Search(2)"><a href="#">必应</a></li>
-            <li id="s3" onclick="Search(3)" ><a href="#">谷歌</a></li>
+            <li id="s1" onclick="Search(1)" class="chosed"><a href="#">必应</a></li>
+            <li id="s2" onclick="Search(2)"><a href="#">谷歌</a></li>
+            <li id="s3" onclick="Search(3)" ><a href="#">知乎</a></li>
             <li id="s4" onclick="Search(4)"><a href="#">学术</a></li>
             <li id="s5" onclick="Search(5)"><a href="#">网盘</a></li>
         </ul>
     </div>
 
     <!--SearXNG-->
-    <div id="i1">
+    <!-- <div id="i1">
         <form action="https://searx.bndkt.io/search" target="_blank">
             <input type="text" name="q" placeholder="SearXNG Search...">
         </form>
-    </div>
+    </div> -->
     <!--必应搜索-->
-    <div id="i2">
+    <div id="i1">
         <form action="https://global.bing.com/search" target="_blank">
             <input type="text" name="q" id="kw" placeholder="必应搜索...">
         </form>
     </div>
     <!--谷歌搜索-->
-    <div id="i3">
+    <div id="i2">
         <form action="https://google.com/search" method="get" target="_blank">
             <input type="text" name="q" placeholder="谷歌搜索...">
+        </form>
+    </div>
+    <!--知乎搜索-->
+    <div id="i3">
+        <form action="https://www.zhihu.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="知乎搜索...">
         </form>
     </div>
     <!--谷歌学术搜索-->
