@@ -43,10 +43,13 @@
         }
     }
 
-    const doc = document.documentElement
+    // 屏幕设配
+    const html = document.documentElement;
+    const width = html.clientWidth;  // 取窗口宽度
+    html.style.fontSize = width / 1500 * 16 + 'px'
     window.onresize = () => {
-        let width = doc.clientWidth  //获取窗口宽度
-        doc.style.fontSize = width / 1500 * 16 + 'px'
+        const width = html.clientWidth;  // 获取窗口宽度
+        html.style.fontSize = width / 1500 * 16 + 'px';
     }
 
 </script>
@@ -217,24 +220,15 @@
                 </div>
                 <div class="name"><a href="https://github.com/" class="text" target="_blank">GitHub</a></div>
             </div>  
-            <!--QQ邮箱-->
-            <!-- <div class="mix">
+            <!--秘塔AI搜索-->
+            <div class="mix">
                 <div class="icon">
-                    <a href="https://mail.qq.com/" target="_blank">
-                        <img src="icon/qqmail.png">
+                    <a href="https://metaso.cn/" target="_blank">
+                        <img src="icon/metaso.png">
                     </a>
                 </div>
-                <div class="name"><a href="https://mail.qq.com/" class="text" target="_blank">QQ邮箱</a></div>
-            </div> -->
-            <!--网易邮箱-->
-            <!-- <div class="mix">
-                <div class="icon">
-                    <a href="https://mail.163.com/" target="_blank">
-                        <img src="icon/163mail.png">
-                    </a>
-                </div>
-                <div class="name"><a href="https://mail.163.com/" class="text" target="_blank">网易邮箱</a></div>
-            </div> -->
+                <div class="name"><a href="https://metaso.cn/" class="text" target="_blank">秘塔AI搜索</a></div>
+            </div>
         </div>
     </div>
     <!--视听-->
@@ -303,14 +297,14 @@
                 </div>
                 <div class="name"><a href="https://www.youtube.com/" class="text" target="_blank">YouTube</a></div>
             </div>
-            <!--电影先生-->
+            <!--网飞猫-->
             <div class="mix">
                 <div class="icon">
-                    <a href="https://dianyi.ng/" target="_blank">
-                        <img src="icon/dyxs.png">
+                    <a href="https://www.ncat1.app/" target="_blank">
+                        <img src="icon/ncat.png">
                     </a>
                 </div>
-                <div class="name"><a href="https://dianyi.ng/" class="text" target="_blank">电影先生</a></div>
+                <div class="name"><a href="https://www.ncat1.app/" class="text" target="_blank">网飞猫</a></div>
             </div>
             <!--E-ACG-->
             <div class="mix">
@@ -379,15 +373,6 @@
                     </a>
                 </div>
                 <div class="name"><a href="http://www.cnki.net/" class="text" target="_blank">知网</a></div>
-            </div>
-            <!--读秀-->
-            <div class="mix">
-                <div class="icon">
-                    <a href="http://www.duxiu.com/" target="_blank">
-                        <img src="icon/duxiu.png">
-                    </a>
-                </div>
-                <div class="name"><a href="http://www.duxiu.com/" class="text" target="_blank">读秀</a></div>
             </div>
              <!--IEEE-->
              <div class="mix">
@@ -687,25 +672,6 @@
                 </div>
                 <div class="name"><a href="https://www.szlcsc.com/?ref=editor" class="text" target="_blank">立创商城</a></div>
             </div>
-            <!--得捷-->
-            <div class="mix">
-                <div class="icon">
-                    <a href="https://www.digikey.cn/" target="_blank">
-                        <img src="icon/digi.png">
-                    </a>
-                </div>
-                <div class="name"><a href="https://www.digikey.cn/" class="text" target="_blank">得捷</a></div>
-            </div>
-             <!--贸泽-->
-             <div class="mix">
-                <div class="icon">
-                    <a href="https://www.mouser.cn/" target="_blank">
-                        <img src="icon/mouser.png">
-                    </a>
-                </div>
-                <div class="name"><a href="https://www.mouser.cn/" class="text" target="_blank">贸泽</a></div>
-            </div>
-            
 
         </div>
     </div>
