@@ -42,6 +42,13 @@
             }
         }
     }
+
+    const doc = document.documentElement
+    window.onresize = () => {
+        let width = doc.clientWidth  //获取窗口宽度
+        doc.style.fontSize = width / 1500 * 16 + 'px'
+    }
+
 </script>
 
 <body> 
@@ -115,7 +122,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://weibo.com/" target="_blank">
-                        <img src="icon/weibo.png" width="72">
+                        <img src="icon/weibo.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://weibo.com/" class="text" target="_blank">微博</a></div>
@@ -124,7 +131,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.zhihu.com/" target="_blank">
-                        <img src="icon/zhihu.png" width="72">
+                        <img src="icon/zhihu.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.zhihu.com/" class="text" target="_blank">知乎</a></div>
@@ -133,7 +140,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://tieba.baidu.com/" target="_blank">
-                        <img src="icon/tieba.png" width="72">
+                        <img src="icon/tieba.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://tieba.baidu.com/" class="text" target="_blank">百度贴吧</a></div>
@@ -142,7 +149,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://twitter.com" target="_blank">
-                        <img src="icon/x.png" width="72">
+                        <img src="icon/x.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://twitter.com" class="text" target="_blank">X</a></div>
@@ -151,7 +158,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.mydigit.cn/" target="_blank">
-                        <img src="icon/mydigit.png" width="72">
+                        <img src="icon/mydigit.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.mydigit.cn/" class="text" target="_blank">数码之家</a></div>
@@ -160,7 +167,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://bangumi.tv/" target="_blank">
-                        <img src="icon/bangumi.png" width="72">
+                        <img src="icon/bangumi.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://bangumi.tv/" class="text" target="_blank">Bangumi</a></div>
@@ -169,7 +176,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://bbs.saraba1st.com/2b/forum.php" target="_blank">
-                        <img src="icon/stage1.png" width="72">
+                        <img src="icon/stage1.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://bbs.saraba1st.com/2b/forum.php" class="text" target="_blank">STAGE1</a></div>
@@ -178,7 +185,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.qireader.com.cn" target="_blank">
-                        <img src="icon/qireader.png" width="72">
+                        <img src="icon/qireader.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.qireader.com.cn" class="text" target="_blank">RSS</a></div>
@@ -187,7 +194,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://juejin.cn/" target="_blank">
-                        <img src="icon/juejin.png" width="72">
+                        <img src="icon/juejin.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://juejin.cn/" class="text" target="_blank">掘金</a></div>
@@ -196,7 +203,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.cnblogs.com" target="_blank">
-                        <img src="icon/cnblogs.png" width="72">
+                        <img src="icon/cnblogs.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.cnblogs.com" class="text" target="_blank">博客园</a></div>
@@ -205,7 +212,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://github.com/" target="_blank">
-                        <img src="icon/github.png" width="72">
+                        <img src="icon/github.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://github.com/" class="text" target="_blank">GitHub</a></div>
@@ -214,7 +221,7 @@
             <!-- <div class="mix">
                 <div class="icon">
                     <a href="https://mail.qq.com/" target="_blank">
-                        <img src="icon/qqmail.png" width="72">
+                        <img src="icon/qqmail.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://mail.qq.com/" class="text" target="_blank">QQ邮箱</a></div>
@@ -223,7 +230,7 @@
             <!-- <div class="mix">
                 <div class="icon">
                     <a href="https://mail.163.com/" target="_blank">
-                        <img src="icon/163mail.png" width="72">
+                        <img src="icon/163mail.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://mail.163.com/" class="text" target="_blank">网易邮箱</a></div>
@@ -237,7 +244,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="http://www.iqiyi.com/" target="_blank">
-                        <img src="icon/iqiyi.png" width="72">
+                        <img src="icon/iqiyi.png">
                     </a>
                 </div>
                 <div class="name"><a href="http://www.iqiyi.com/" class="text" target="_blank">爱奇艺</a></div>
@@ -246,7 +253,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.youku.com/" target="_blank">
-                        <img src="icon/youku.png" width="72">
+                        <img src="icon/youku.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.youku.com/" class="text" target="_blank">优酷</a></div>
@@ -255,7 +262,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://v.qq.com/" target="_blank">
-                        <img src="icon/qqvideo.png" width="72">
+                        <img src="icon/qqvideo.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://v.qq.com/" class="text" target="_blank">腾讯视频</a></div>
@@ -264,7 +271,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.ixigua.com/" target="_blank">
-                        <img src="icon/xgvideo.png" width="72">
+                        <img src="icon/xgvideo.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.ixigua.com/" class="text" target="_blank">西瓜视频</a></div>
@@ -273,7 +280,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.acfun.cn/" target="_blank">
-                        <img src="icon/acfun.png" width="72">
+                        <img src="icon/acfun.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.acfun.cn/" class="text" target="_blank">AcFun</a></div>
@@ -282,7 +289,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.bilibili.com/" target="_blank">
-                        <img src="icon/bilibili.png" width="72">
+                        <img src="icon/bilibili.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.bilibili.com/" class="text" target="_blank">哔哩哔哩</a></div>
@@ -291,7 +298,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.youtube.com/" target="_blank">
-                        <img src="icon/youtube.png" width="72">
+                        <img src="icon/youtube.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.youtube.com/" class="text" target="_blank">YouTube</a></div>
@@ -300,7 +307,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://dianyi.ng/" target="_blank">
-                        <img src="icon/dyxs.png" width="72">
+                        <img src="icon/dyxs.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://dianyi.ng/" class="text" target="_blank">电影先生</a></div>
@@ -309,7 +316,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://eacg1.com/" target="_blank">
-                        <img src="icon/eacg.png" width="72">
+                        <img src="icon/eacg.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://eacg1.com/" class="text" target="_blank">E-ACG</a></div>
@@ -318,7 +325,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://anime.girigirilove.com//" target="_blank">
-                        <img src="icon/girigirilove.png" width="72">
+                        <img src="icon/girigirilove.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://anime.girigirilove.com//" class="text" target="_blank">girigirilove</a></div>
@@ -327,7 +334,7 @@
             <!-- <div class="mix">
                 <div class="icon">
                     <a href="https://o2-rain.github.io/oxygenlive/" target="_blank">
-                        <img src="icon/lightlive.png" width="72">
+                        <img src="icon/lightlive.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://o2-rain.github.io/oxygenlive/" class="text" target="_blank">氧直播</a></div>
@@ -336,7 +343,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.copymanga.tv/" target="_blank">
-                        <img src="icon/copymanga.png" width="72">
+                        <img src="icon/copymanga.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.copymanga.tv/" class="text" target="_blank">拷贝漫画</a></div>
@@ -345,7 +352,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://tool.liumingye.cn/music/?page=searchPage#/" target="_blank">
-                        <img src="icon/music.png" width="72">
+                        <img src="icon/music.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://tool.liumingye.cn/music/?page=searchPage#/" class="text" target="_blank">音乐下载</a></div>
@@ -354,7 +361,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.ximalaya.com/" target="_blank">
-                        <img src="icon/xmly.png" width="72">
+                        <img src="icon/xmly.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.ximalaya.com/" class="text" target="_blank">喜马拉雅FM</a></div>
@@ -368,7 +375,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="http://www.cnki.net/" target="_blank">
-                        <img src="icon/zhiwang.png" width="72">
+                        <img src="icon/zhiwang.png">
                     </a>
                 </div>
                 <div class="name"><a href="http://www.cnki.net/" class="text" target="_blank">知网</a></div>
@@ -377,7 +384,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="http://www.duxiu.com/" target="_blank">
-                        <img src="icon/duxiu.png" width="72">
+                        <img src="icon/duxiu.png">
                     </a>
                 </div>
                 <div class="name"><a href="http://www.duxiu.com/" class="text" target="_blank">读秀</a></div>
@@ -386,7 +393,7 @@
              <div class="mix">
                 <div class="icon">
                     <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">
-                        <img src="icon/ieee.png" width="72">
+                        <img src="icon/ieee.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://ieeexplore.ieee.org/Xplore/home.jsp" class="text" target="_blank">IEEE</a></div>
@@ -395,7 +402,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.sci-hub.st" target="_blank">
-                        <img src="icon/scihub.png" width="72">
+                        <img src="icon/scihub.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.sci-hub.st" class="text" target="_blank">Sci-Hub</a></div>
@@ -404,7 +411,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="http://xueshu.baidu.com/" target="_blank">
-                        <img src="icon/baidu.png" width="72">
+                        <img src="icon/baidu.png">
                     </a>
                 </div>
                 <div class="name"><a href="http://xueshu.baidu.com/" class="text" target="_blank">百度学术</a></div>
@@ -413,7 +420,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://ac.scmor.com/" target="_blank">
-                        <img src="icon/google.png" width="72">
+                        <img src="icon/google.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://ac.scmor.com/" class="text" target="_blank">谷歌学术镜像</a></div>
@@ -422,7 +429,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://search.crossref.org/" target="_blank">
-                        <img src="icon/crossref.png" width="72">
+                        <img src="icon/crossref.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://search.crossref.org/" class="text" target="_blank">Crossref</a></div>
@@ -431,7 +438,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.deepl.com/translator" target="_blank">
-                        <img src="icon/deepl.png" width="72">
+                        <img src="icon/deepl.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.deepl.com/translator" class="text" target="_blank">DeepL翻译</a></div>
@@ -440,7 +447,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.runoob.com/" target="_blank">
-                        <img src="icon/cainiao.png" width="72">
+                        <img src="icon/cainiao.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.runoob.com/" class="text" target="_blank">菜鸟教程</a></div>
@@ -449,7 +456,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.51zxw.net/" target="_blank">
-                        <img src="icon/wyzx.png" width="72">
+                        <img src="icon/wyzx.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.51zxw.net/" class="text" target="_blank">我要自学网</a></div>
@@ -463,7 +470,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://web.baimiaoapp.com/" target="_blank">
-                        <img src="icon/baimiao.png" width="72">
+                        <img src="icon/baimiao.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://web.baimiaoapp.com/" class="text" target="_blank">文字识别</a></div>
@@ -472,7 +479,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.ilovepdf.com/zh-cn" target="_blank">
-                        <img src="icon/pdf.png" width="72">
+                        <img src="icon/pdf.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.ilovepdf.com/zh-cn" class="text" target="_blank">PDF转换</a></div>
@@ -481,7 +488,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="http://www.hippter.com/" target="_blank">
-                        <img src="icon/ppt.png" width="72">
+                        <img src="icon/ppt.png">
                     </a>
                 </div>
                 <div class="name"><a href="http://www.hippter.com/" class="text" target="_blank">PPT模板</a></div>
@@ -490,7 +497,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://ol.woobx.cn" target="_blank">
-                        <img src="icon/woodbox.png" width="72">
+                        <img src="icon/woodbox.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://ol.woobx.cn" class="text" target="_blank">一个木函</a></div>
@@ -499,7 +506,7 @@
             <!-- <div class="mix">
                 <div class="icon">
                     <a href="https://www.gaitubao.com/exif" target="_blank">
-                        <img src="icon/exif.png" width="72">
+                        <img src="icon/exif.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.gaitubao.com/exif" class="text" target="_blank">照片EXIF查询</a></div>
@@ -508,7 +515,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.materialpalette.com/colors" target="_blank">
-                        <img src="icon/mdcolor.png" width="72">
+                        <img src="icon/mdcolor.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.materialpalette.com/colors" class="text" target="_blank">MD色卡</a></div>
@@ -517,7 +524,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.iconfont.cn/" target="_blank">
-                        <img src="icon/iconfont.png" width="72">
+                        <img src="icon/iconfont.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.iconfont.cn/" class="text" target="_blank">iconfont</a></div>
@@ -526,7 +533,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.photopea.com" target="_blank">
-                        <img src="icon/ps.png" width="72">
+                        <img src="icon/ps.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.photopea.com" class="text" target="_blank">在线PS</a></div>
@@ -535,7 +542,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://123apps.com/cn" target="_blank">
-                        <img src="icon/123apps.png" width="72">
+                        <img src="icon/123apps.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://123apps.com/cn" class="text" target="_blank">在线音视频剪辑</a></div>
@@ -544,7 +551,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://zh.z-lib.gs/" target="_blank">
-                        <img src="icon/zlib.png" width="72">
+                        <img src="icon/zlib.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://zh.z-lib.gs/" class="text" target="_blank">Z-Lib</a></div>
@@ -553,7 +560,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://chrome.zzzmh.cn/" target="_blank">
-                        <img src="icon/plugin.png" width="72">
+                        <img src="icon/plugin.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://chrome.zzzmh.cn/" class="text" target="_blank">Chrome插件</a></div>
@@ -562,7 +569,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://greasyfork.org/zh-CN" target="_blank">
-                        <img src="icon/youhou.png" width="72">
+                        <img src="icon/youhou.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://greasyfork.org/zh-CN" class="text" target="_blank">油猴脚本</a></div>
@@ -571,7 +578,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.digikey.cn/zh/resources/conversion-calculators/conversion-calculator-pcb-trace-width" target="_blank">
-                        <img src="icon/pcb.png" width="72">
+                        <img src="icon/pcb.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.digikey.cn/zh/resources/conversion-calculators/conversion-calculator-pcb-trace-width" class="text" target="_blank">PCB印制线宽度计算器</a></div>
@@ -580,7 +587,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://lceda.cn/editor" target="_blank">
-                        <img src="icon/lceda.png" width="72">
+                        <img src="icon/lceda.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://lceda.cn/editor" class="text" target="_blank">立创EDA</a></div>
@@ -594,7 +601,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.moakt.com/" target="_blank">
-                        <img src="icon/lsmail.png" width="72">
+                        <img src="icon/lsmail.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.moakt.com/" class="text" target="_blank">临时邮箱</a></div>
@@ -603,7 +610,7 @@
              <div class="mix">
                 <div class="icon">
                     <a href="https://www.52pojie.cn/" target="_blank">
-                        <img src="icon/52pj.png" width="72">
+                        <img src="icon/52pj.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.52pojie.cn/" class="text" target="_blank">吾爱破解</a></div>
@@ -612,7 +619,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.ghpym.com/" target="_blank">
-                        <img src="icon/ghbk.png" width="72">
+                        <img src="icon/ghbk.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.ghpym.com/" class="text" target="_blank">果核剥壳</a></div>
@@ -621,7 +628,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="http://www.yxssp.com/" target="_blank">
-                        <img src="icon/yx.png" width="72">
+                        <img src="icon/yx.png">
                     </a>
                 </div>
                 <div class="name"><a href="http://www.yxssp.com/" class="text" target="_blank">异星软件空间</a></div>
@@ -630,7 +637,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.appinn.com/" target="_blank">
-                        <img src="icon/xzrj.png" width="72">
+                        <img src="icon/xzrj.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.appinn.com/" class="text" target="_blank">小众软件</a></div>
@@ -639,7 +646,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://jamcz.com/" target="_blank">
-                        <img src="icon/jamcz.png" width="72">
+                        <img src="icon/jamcz.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://jamcz.com/" class="text" target="_blank">晨钟网络科技</a></div>
@@ -648,7 +655,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.yikm.net/" target="_blank">
-                        <img src="icon/game.png" width="72">
+                        <img src="icon/game.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.yikm.net/" class="text" target="_blank">经典游戏</a></div>
@@ -657,7 +664,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://iniche.cn/" target="_blank">
-                        <img src="icon/xzw.png" width="72">
+                        <img src="icon/xzw.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://iniche.cn/" class="text" target="_blank">小众网</a></div>
@@ -666,7 +673,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://game.pokefans.cn/" target="_blank">
-                        <img src="icon/pokefans.png" width="72">
+                        <img src="icon/pokefans.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://game.pokefans.cn/" class="text" target="_blank">宝可饭堂</a></div>
@@ -675,7 +682,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.szlcsc.com/?ref=editor" target="_blank">
-                        <img src="icon/lcsc.png" width="72">
+                        <img src="icon/lcsc.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.szlcsc.com/?ref=editor" class="text" target="_blank">立创商城</a></div>
@@ -684,7 +691,7 @@
             <div class="mix">
                 <div class="icon">
                     <a href="https://www.digikey.cn/" target="_blank">
-                        <img src="icon/digi.png" width="72">
+                        <img src="icon/digi.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.digikey.cn/" class="text" target="_blank">得捷</a></div>
@@ -693,7 +700,7 @@
              <div class="mix">
                 <div class="icon">
                     <a href="https://www.mouser.cn/" target="_blank">
-                        <img src="icon/mouser.png" width="72">
+                        <img src="icon/mouser.png">
                     </a>
                 </div>
                 <div class="name"><a href="https://www.mouser.cn/" class="text" target="_blank">贸泽</a></div>
