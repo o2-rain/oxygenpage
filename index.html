@@ -42,15 +42,19 @@
             }
         }
     }
-
+    
     // 屏幕适配
-    const html = document.documentElement;
-    const width = html.clientWidth;  // 取窗口宽度
-    html.style.fontSize = width / 1500 * 16 + 'px'
-    window.onresize = () => {
-        const width = html.clientWidth;  // 获取窗口宽度
-        html.style.fontSize = width / 1500 * 16 + 'px';
+    function setRem() {
+        // 获取屏幕的宽度
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;         
+        // 动态改变html根节点字体大小
+        var html_ = document.getElementsByTagName('html')[0];
+        html_.style.fontSize = clientWidth / 1500 * 16 + 'px';
     }
+    // 重置大小执行事件
+    window.onresize = setRem;
+    // 刷新大小执行事件
+    window.onload = setRem;
 
 </script>
 
@@ -157,14 +161,14 @@
                 </div>
                 <div class="name"><a href="https://twitter.com" class="text" target="_blank">X</a></div>
             </div>
-            <!--数码之家-->
-            <div class="mix">
+             <!--NewsNow-->
+             <div class="mix">
                 <div class="icon">
-                    <a href="https://www.mydigit.cn/" target="_blank">
-                        <img src="icon/mydigit.png">
+                    <a href="https://newsnow.busiyi.world/" target="_blank">
+                        <img src="icon/newsnow.png">
                     </a>
                 </div>
-                <div class="name"><a href="https://www.mydigit.cn/" class="text" target="_blank">数码之家</a></div>
+                <div class="name"><a href="https://newsnow.busiyi.world/" class="text" target="_blank">NewsNow</a></div>
             </div>
             <!--Bangumi-->
             <div class="mix">
@@ -184,14 +188,14 @@
                 </div>
                 <div class="name"><a href="https://bbs.saraba1st.com/2b/forum.php" class="text" target="_blank">STAGE1</a></div>
             </div>
-            <!--RSS-->
+            <!--新番表-->
             <div class="mix">
                 <div class="icon">
-                    <a href="https://www.qireader.com.cn" target="_blank">
-                        <img src="icon/qireader.png">
+                    <a href="https://xf.hmacg.cn/" target="_blank">
+                        <img src="icon/hmacg.png">
                     </a>
                 </div>
-                <div class="name"><a href="https://www.qireader.com.cn" class="text" target="_blank">RSS</a></div>
+                <div class="name"><a href="https://xf.hmacg.cn/" class="text" target="_blank">新番表</a></div>
             </div>
             <!--掘金-->
             <div class="mix">
@@ -324,14 +328,14 @@
                 </div>
                 <div class="name"><a href="https://anime.girigirilove.com//" class="text" target="_blank">girigirilove</a></div>
             </div>
-            <!--氧直播-->
+            <!--电视直播-->
             <div class="mix">
                 <div class="icon">
                     <a href="https://o2-rain.github.io/oxygenlive/" target="_blank">
                         <img src="icon/lightlive.png">
                     </a>
                 </div>
-                <div class="name"><a href="https://o2-rain.github.io/oxygenlive/" class="text" target="_blank">氧直播</a></div>
+                <div class="name"><a href="https://o2-rain.github.io/oxygenlive/" class="text" target="_blank">电视直播</a></div>
             </div>
             <!--拷贝漫画-->
             <div class="mix">
@@ -345,20 +349,11 @@
             <!--音乐下载-->
             <div class="mix">
                 <div class="icon">
-                    <a href="https://tool.liumingye.cn/music/?page=searchPage#/" target="_blank">
+                    <a href="https://www.gequbao.com/" target="_blank">
                         <img src="icon/music.png">
                     </a>
                 </div>
-                <div class="name"><a href="https://tool.liumingye.cn/music/?page=searchPage#/" class="text" target="_blank">音乐下载</a></div>
-            </div>
-            <!--喜马拉雅-->
-            <div class="mix">
-                <div class="icon">
-                    <a href="https://www.ximalaya.com/" target="_blank">
-                        <img src="icon/xmly.png">
-                    </a>
-                </div>
-                <div class="name"><a href="https://www.ximalaya.com/" class="text" target="_blank">喜马拉雅FM</a></div>
+                <div class="name"><a href="https://www.gequbao.com/" class="text" target="_blank">音乐下载</a></div>
             </div>
         </div>
     </div>
@@ -410,14 +405,14 @@
                 </div>
                 <div class="name"><a href="https://ac.scmor.com/" class="text" target="_blank">谷歌学术镜像</a></div>
             </div>
-            <!--Crossref-->
+            <!--Z-Lib-->
             <div class="mix">
                 <div class="icon">
-                    <a href="https://search.crossref.org/" target="_blank">
-                        <img src="icon/crossref.png">
+                    <a href="https://zh.z-lib.gs/" target="_blank">
+                        <img src="icon/zlib.png">
                     </a>
                 </div>
-                <div class="name"><a href="https://search.crossref.org/" class="text" target="_blank">Crossref</a></div>
+                <div class="name"><a href="https://zh.z-lib.gs/" class="text" target="_blank">Z-Lib</a></div>
             </div>
             <!--DeepL翻译-->
             <div class="mix">
@@ -487,15 +482,6 @@
                 </div>
                 <div class="name"><a href="https://ol.woobx.cn" class="text" target="_blank">一个木函</a></div>
             </div>
-            <!--照片EXIF查询-->
-            <!-- <div class="mix">
-                <div class="icon">
-                    <a href="https://www.gaitubao.com/exif" target="_blank">
-                        <img src="icon/exif.png">
-                    </a>
-                </div>
-                <div class="name"><a href="https://www.gaitubao.com/exif" class="text" target="_blank">照片EXIF查询</a></div>
-            </div> -->
             <!--MD色卡-->
             <div class="mix">
                 <div class="icon">
@@ -531,15 +517,6 @@
                     </a>
                 </div>
                 <div class="name"><a href="https://123apps.com/cn" class="text" target="_blank">在线音视频剪辑</a></div>
-            </div>
-            <!--Z-Lib-->
-            <div class="mix">
-                <div class="icon">
-                    <a href="https://zh.z-lib.gs/" target="_blank">
-                        <img src="icon/zlib.png">
-                    </a>
-                </div>
-                <div class="name"><a href="https://zh.z-lib.gs/" class="text" target="_blank">Z-Lib</a></div>
             </div>
             <!--Chrome插件-->
             <div class="mix">
@@ -626,6 +603,24 @@
                     </a>
                 </div>
                 <div class="name"><a href="https://www.appinn.com/" class="text" target="_blank">小众软件</a></div>
+            </div>
+            <!--2012资源站-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://2012rs.mysxl.cn/" target="_blank">
+                        <img src="icon/2012.png">
+                    </a>
+                </div>
+                <div class="name"><a href="https://2012rs.mysxl.cn/" class="text" target="_blank">2012资源站</a></div>
+            </div>
+            <!--SOCPK-->
+            <div class="mix">
+                <div class="icon">
+                    <a href="https://socpk.com/" target="_blank">
+                        <img src="icon/socpk.png">
+                    </a>
+                </div>
+                <div class="name"><a href="https://socpk.com/" class="text" target="_blank">SOCPK</a></div>
             </div>
             <!--晨钟网络科技-->
             <div class="mix">
