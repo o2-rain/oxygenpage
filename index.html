@@ -11,6 +11,7 @@
 </head>
 
 <script type="text/javascript">
+    // 搜索引擎选项
     function Search(num)
     {
         var i;
@@ -26,7 +27,8 @@
             }
         }
     }
-
+    
+    // 类别选项
     function Tab(num)
     {
         var i;
@@ -56,6 +58,22 @@
     // 刷新大小执行事件
     window.onload = setRem;
 
+    // 回车搜索
+    function entersearch(event){
+        if (event.keyCode == 13){
+            performSearch();
+        }
+    }
+
+    //搜索函数
+    function performSearch() {
+        var query = document.getElementById("searchInput").value;
+        var searchUrl = "https://global.bing.com/search?setmkt=en-us&setlang=zh-Hans&q=" + encodeURIComponent(query);
+        
+        window.open(searchUrl, "_blank");
+    }
+    
+
 </script>
 
 <body> 
@@ -72,17 +90,9 @@
         </ul>
     </div>
 
-    <!--SearXNG-->
-    <!-- <div id="i1">
-        <form action="https://searx.bndkt.io/search" target="_blank">
-            <input type="text" name="q" placeholder="SearXNG Search...">
-        </form>
-    </div> -->
     <!--必应搜索-->
     <div id="i1">
-        <form action="https://global.bing.com/search" target="_blank">
-            <input type="text" name="q" placeholder="必应搜索...">
-        </form>
+        <input type="text" id="searchInput" placeholder="必应搜索..." onkeydown="entersearch(event)">
     </div>
     <!--谷歌搜索-->
     <div id="i2">
@@ -96,10 +106,10 @@
             <input type="text" name="q" placeholder="知乎搜索...">
         </form>
     </div>
-    <!--谷歌学术搜索-->
+    <!--学术搜索-->
     <div id="i4">
-        <form action="https://so.cljtscd.com/scholar" target="_blank">
-            <input type="text" name="q" placeholder="谷歌学术搜索...">
+        <form action="https://x.sci-hub.org.cn/scholar" target="_blank">
+            <input type="text" name="q" placeholder="学术搜索...">
         </form>
     </div>
     <!--网盘搜索-->
